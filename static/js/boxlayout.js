@@ -9,7 +9,7 @@
  * http://www.codrops.com
  */
 var Boxlayout = (function() {
-
+console.log('box layout initiated');
     var $el = $('#bl-main'),
         $sections = $el.children('section:not(.topleft)'),
         // works section
@@ -44,11 +44,12 @@ var Boxlayout = (function() {
     }
 
     function initEvents() {
-
+		console.log('initEvents');
+		  console.log($sections);
         $sections.each(function() {
-
+			
             var $section = $(this);
-
+			console.log($section);
             // expand the clicked section and scale down the others
             $section.on('click', function() {
 

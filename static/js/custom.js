@@ -3,7 +3,7 @@
     "use strict";
 	
     $(document).ready(function() {
-		
+		console.log('custom');
 		// PRELOADER
         $("body").toggleClass("loaded");
         setTimeout(function() {
@@ -23,7 +23,7 @@
         });
 		
 		// BOX LAYOUT
-        Boxlayout.init();
+        //Boxlayout.init();
 		
 		// REMOVE # FROM URL
 		$("a[href='#']").on("click", (function(e) {
